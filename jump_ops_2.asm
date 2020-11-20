@@ -6,8 +6,7 @@ _start:
     mov ebx, 42     ; exit status is 42
     mov eax, 1      ; sys_exit system call
     cmp ecx, 100    ; compare ecx to 100
-    jl skip         ; jump if less than = jl, jump = jmp
-    mov ebx, 13     ; exit status is 13 this is jumped over...
+    jl skip         ; jump if less than
+    mov ebx, 13     ; exit status is 13
 skip:
     int 0x80
-    ; output is 42
