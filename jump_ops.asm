@@ -11,3 +11,10 @@ _start:
 skip:
     int 0x80
     ; output is 42
+; The following are also conditional jump operands:
+; je jump if equal
+; jne jump if not equal
+; jg jump if greater
+; jge jump if greater or equal
+; jl jump if less
+; jle jump if less or equal to
