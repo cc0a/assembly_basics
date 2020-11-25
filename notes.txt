@@ -1,0 +1,21 @@
+Data Registers:
+AX
+BX
+CX
+DX
+
+Pointer Registers:
+SP
+BP
+
+Index Registers:
+SI
+DI
+
+Segment Registers
+CS
+DS
+SS
+ES
+IP
+

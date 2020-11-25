@@ -1,0 +1,9 @@
+Data Registers = ax, bx, cx, and dx
+bl is the lower side of the bx register
+Only ax, bx, cx, and dx registers can be divided into higher/lower segments. Separated into two registers. Each register would have 8 bits. 
+
+There are 14 registers, and each register has 16 bits. 
+ax can be divided into ah and al
+bx can be divided into bh and bl
+cx can be divided into ch and cl
+dx can be divided into dh and dl

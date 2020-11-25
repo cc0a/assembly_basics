@@ -1,0 +1,3 @@
+In Assembly, a variable is a position in the central memory. The position has 2 things: An address and a size (the number of rows it has in central memory, or the number of rows reserved for the variable).   Microprocessor 8086 has 14 registers and there are data registers that we use them in order to stock and save the data of the program. 
+
+Assuming all registers are occupied and the data is needed, we cannot delete data and save more within a given register. In this scenario we use central memory to save data, and variables come into play by way of defining a variable within central memory with a special address and a special size depending on the needs of the situation. 
