@@ -1,0 +1,25 @@
+Flag Registers - contain 16 bits or 16 columns. Columns that have sense are called flags. Carry flag, party flag, overflow flag, etc... 6 are status flags, 3 are control flags.
+
+Status Flags are: (Provide the state of the CPU after carrying out an instruction or process)
+
+Overflow -
+
+Sign - 
+
+Zero - 
+
+Auxiliary - 
+
+Parity - 
+
+Carry - 
+
+Control Flags are: (Operations or instructions)
+
+Direction -
+
+Interrupt Enable -
+
+Trap -
+
+Control flags control and manage the processor in order to do opertions or carry out instructions.
