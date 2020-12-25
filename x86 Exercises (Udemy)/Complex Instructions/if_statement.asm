@@ -11,34 +11,34 @@ main proc
         mov ds,ax
 
         ;print msg1
-        mov ah,9
+        mov ah,9 ; output text string
         lea dx,msg1 ; brings the address of msg1 to the register of dx - branched message
-        int 21h
+        int 21h ; DOS service call
 
         ;user input
-        mov ah,1 ; takes in number from keyboard
-        int 21h ; 
+        mov ah,1 ; takes input from keyboard
+        int 21h ; DOS service call
         mov bl,al ; number is saved into bl register
 
         ;print the number
-        mov ah,9
-        mov dx,msg2 offset
-        int 21h
+        mov ah,9 ; output text string
+        mov dx,msg2 offset ; offset means equal to the variable of msg2 is now what dx is
+        int 21h ; DOS service call
 
-        mov ah,2
-        mov dl,bl
-        int 21h
+        mov ah,2 ; set cursor position
+        mov dl,bl ; contents of bl moved to dl
+        int 21h ; DOS service call
 
         ;if bl = 5
-        cmp bl,'5'
-        jne endif
+        cmp bl,'5' ; compare contents of bl register with the integer 5
+        jne endif ; jump if bl =/= 5
 
         ;print lucky
-        mov ah,9
-        lea dx,msgLuck
-        int 21h
+        mov ah,9 ; output text string
+        lea dx,msgLuck ; points dx to address of msgLuck
+        int 21h ; DOS service call
 
-    endif:mov ah,4ch
-        int 21h
+    endif:mov ah,4ch ; terminate with return code
+        int 21h ; DOS service call
         RET
 end
